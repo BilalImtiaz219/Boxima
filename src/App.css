@@ -3,6 +3,16 @@
   padding: 0;
   text-align: center;
 }
+/* app.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 4rem; /* Adjust based on Navbar height */
+}
+
 
 .logo {
   height: 6em;
@@ -63,4 +73,25 @@
   color: #EC3642;
   background-color: white;
   font-size: 15px;
+}
+
+.slick-prev, .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  background-color: #EC3642;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: #C12A35; /* Slightly darker shade for hover effect */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  color: white;
+  opacity: 1;
 }

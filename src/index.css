@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .slick-prev, .slick-next {
+    @apply w-12 h-12 z-10 bg-[#EC3642] rounded-full flex justify-center items-center;
+  }
+
+  .slick-prev:hover, .slick-next:hover {
+    @apply bg-[#C12A35];
+  }
+
+  .slick-prev:before, .slick-next:before {
+    @apply text-white text-lg opacity-100;
+  }
+}
